@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HumanEval Results — 92.1%</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 960px; margin: 2em auto; padding: 0 1em; background: #1a1a2e; color: #e0e0e0; }
+  h1 { color: #fff; }
+  .summary { display: flex; gap: 1.5em; margin: 1em 0 2em; flex-wrap: wrap; }
+  .stat { background: #16213e; padding: 1em 1.5em; border-radius: 8px; min-width: 100px; }
+  .stat .value { font-size: 2em; font-weight: bold; }
+  .stat .label { font-size: 0.85em; color: #888; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  th { text-align: left; padding: 10px 8px; border-bottom: 2px solid #333; color: #aaa; }
+  td { padding: 8px; border-bottom: 1px solid #2a2a4a; vertical-align: top; }
+  tr.pass { background: transparent; }
+  tr.fail { background: #2a1a1a; }
+  .tid { font-family: monospace; white-space: nowrap; width: 110px; }
+  .status { width: 60px; }
+  .result { color: #e88; font-size: 0.85em; max-width: 280px; }
+  tr.pass .result { color: #8e8; }
+  .code pre { margin: 0; font-size: 0.8em; color: #aaa; max-height: 60px; overflow: hidden; white-space: pre-wrap; }
+  .timestamp { color: #666; font-size: 0.85em; margin-bottom: 2em; }
+</style>
+</head>
+<body>
+<h1>HumanEval Results</h1>
+<p class="timestamp">Generated 2026-07-30 17:49:10</p>
+<div class="summary">
+  <div class="stat"><div class="value">164</div><div class="label">Total</div></div>
+  <div class="stat"><div class="value" style="color:#4c4">151</div><div class="label">Passed</div></div>
+  <div class="stat"><div class="value" style="color:#c44">13</div><div class="label">Failed</div></div>
+  <div class="stat"><div class="value" style="color:#888">0</div><div class="label">Empty</div></div>
+  <div class="stat"><div class="value">92.1%</div><div class="label">Pass@1</div></div>
+</div>
+<table>
+  <thead>
+    <tr><th>Task</th><th>Result</th><th>Error / Detail</th><th>Completion (first 200 chars)</th></tr>
+  </thead>
+  <tbody>
+    <tr class="pass">
+      <td class="tid">HumanEval/0</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    sorted_numbers = sorted(numbers)
+    
+    for i in range(len(sorted_numbers) - 1):
+        # Since the list is sorted, adjacent elements will always have a non-negative difference
+        if sorte</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/1</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>
+    result = []
+    current_group = []
+    depth = 0
+    
+    for char in paren_string:
+        if char == '(':
+            depth += 1
+            current_group.append('(')
+        elif char == ')':</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/2</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return number % 1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/3</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    balance = 0
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+    return False</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/4</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not numbers:
+        return 0.0
+    
+    mean = sum(numbers) / len(numbers)
+    mad = sum(abs(x - mean) for x in numbers) / len(numbers)
+    
+    return mad</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/5</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not numbers:
+        return []
+    
+    result = [numbers[0]]
+    for num in numbers[1:]:
+        result.append(delimeter)
+        result.append(num)
+        
+    return result</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/6</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    result = []
+    for group in paren_string.split():
+        current_depth = 0
+        max_depth = 0
+        for char in group:
+            if char == '(':
+                current_depth += 1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/7</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [s for s in strings if substring in s]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/8</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not numbers:
+        return (0, 1)
+    
+    total_sum = sum(numbers)
+    total_product = 1
+    for num in numbers:
+        total_product *= num
+        
+    return (total_sum, total_product)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/9</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not numbers:
+        return []
+    
+    result = []
+    current_max = numbers[0]
+    for num in numbers:
+        if num > current_max:
+            current_max = num
+        result.append(curren</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/10</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not string:
+        return ""
+    
+    for i in range(len(string)):
+        # Check suffixes from longest to shortest
+        if is_palindrome(string[i:]):
+            # Found the longest palin</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/11</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return ''.join('1' if x != y else '0' for x, y in zip(a, b))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/12</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not strings:
+        return None
+    return max(strings, key=len)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/13</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    a = abs(a)
+    b = abs(b)
+    while b != 0:
+        a, b = b, a % b
+    return a</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/14</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [string[:i] for i in range(1, len(string) + 1)]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/15</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return ' '.join(str(i) for i in range(n + 1))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/16</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return len(set(string.lower()))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/17</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>
+    mapping = {'o': 4, 'o|': 2, '.|': 1}
+    return [mapping[note] for note in music_string.split()]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/18</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not substring:
+        return 0
+    
+    count = 0
+    sub_len = len(substring)
+    
+    # Slide a window of size `sub_len` across the string
+    for i in range(len(string) - sub_len + 1):</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/19</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    order = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    return ' '.join(sorted(numbers.split(), key=order.index))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/20</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>
+    # Sorting the list ensures that the closest elements will be adjacent to each other.
+    sorted_nums = sorted(numbers)
+    
+    min_diff = float('inf')
+    closest_pair = (0.0, 0.0)
+    
+    for</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/21</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    min_val = min(numbers)
+    max_val = max(numbers)
+    range_val = max_val - min_val
+    
+    # Handle edge case where all values are identical to avoid division by zero
+    if range_val == 0:</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/22</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [x for x in values if type(x) is int]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/23</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return len(string)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/24</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n <= 1:
+        return 1
+    
+    # Divisors come in pairs (i, n // i). 
+    # The smallest divisor >= 2 will always pair with the largest proper divisor.
+    for i in range(2, int(n**0.5) + 1)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/25</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    factors = []
+    d = 2
+    while d * d <= n:
+        while n % d == 0:
+            factors.append(d)
+            n //= d
+        d += 1
+    if n > 1:
+        factors.append(n)
+    return factors</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/26</td>
+      <td class="status">❌ fail</td>
+      <td class="result">name 'Counter' is not defined</td>
+      <td class="code"><pre>    counts = Counter(numbers)
+    return [num for num in numbers if counts[num] == 1]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/27</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return string.swapcase()</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/28</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return "".join(strings)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/29</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [s for s in strings if s.startswith(prefix)]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/30</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [x for x in l if x > 0]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/31</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/32</td>
+      <td class="status">❌ fail</td>
+      <td class="result">—</td>
+      <td class="code"><pre>    # Remove trailing zeros to ensure we work with the actual polynomial degree
+    while len(xs) > 1 and xs[-1] == 0:
+        xs = xs[:-1]
+        
+    x = 0.0
+    for _ in range(100):
+        p = po</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/33</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Extract values at indices divisible by 3 (0, 3, 6, ...)
+    third_vals = [l[i] for i in range(0, len(l), 3)]
+    
+    # Sort the extracted values
+    third_vals.sort()
+    
+    # Create a copy o</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/34</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sorted(set(l))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/35</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return max(l)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/36</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count = 0
+    for i in range(n):
+        if i % 11 == 0 or i % 13 == 0:
+            count += str(i).count('7')
+    return count</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/37</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    evens = sorted(l[0::2])
+    res = l[:]
+    res[0::2] = evens
+    return res</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/38</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    # Reverse the left rotation by applying a right rotation to each group of length 3
+    groups = [(group[-1] + g</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/39</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n <= 0:
+        raise ValueError("n must be a positive integer")
+
+    def is_prime(num):
+        if num < 2:
+            return False
+        if num in (2, 3):
+            return True
+        i</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/40</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if len(l) < 3:
+        return False
+    
+    sorted_l = sorted(l)
+    
+    for i in range(len(sorted_l) - 2):
+        left = i + 1
+        right = len(sorted_l) - 1
+        
+        while left < r</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/41</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return n * n</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/42</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [x + 1 for x in l]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/43</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    seen = set()
+    for num in l:
+        if -num in seen:
+            return True
+        seen.add(num)
+    return False</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/44</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if x == 0:
+        return '0'
+    
+    digits = []
+    while x > 0:
+        digits.append(str(x % base))
+        x //= base
+        
+    return ''.join(reversed(digits))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/45</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return (a * h) / 2</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/46</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n < 4:
+        return [0, 0, 2, 0][n]
+    
+    # Initialize the first four values corresponding to indices 0, 1, 2, 3
+    a, b, c, d = 0, 0, 2, 0
+    
+    for _ in range(4, n + 1):
+        # Co</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/47</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not l:
+        raise ValueError("Cannot compute median of an empty list")
+        
+    sorted_l = sorted(l)
+    n = len(sorted_l)
+    mid = n // 2
+    
+    if n % 2 == 1:
+        return sorted_</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/48</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return text == text[::-1]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/49</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return pow(2, n, p)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/50</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return "".join([chr(((ord(ch) - 5 - ord("a")) % 26) + ord("a")) for ch in s])</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/51</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    vowels = set('aeiouAEIOU')
+    return ''.join(char for char in text if char not in vowels)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/52</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return all(x < t for x in l)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/53</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return x + y</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/54</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return set(s0) == set(s1)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/55</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n <= 0:
+        return 0
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/56</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    balance = 0
+    for char in brackets:
+        if char == '<':
+            balance += 1
+        elif char == '>':
+            balance -= 1
+            
+        # If we ever have more closing than o</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/57</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return all(x <= y for x, y in zip(l, l[1:])) or all(x >= y for x, y in zip(l, l[1:]))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/58</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sorted(set(l1) & set(l2))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/59</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    max_prime = -1
+    
+    # Handle factor 2 separately to allow skipping even numbers later
+    while n % 2 == 0:
+        max_prime = 2
+        n //= 2
+        
+    i = 3
+    while i * i <= n:</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/60</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return n * (n + 1) // 2</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/61</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    balance = 0
+    for char in brackets:
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        
+        # If we ever have more closing than openi</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/62</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [i * x for i, x in enumerate(xs) if i > 0]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/63</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n == 0 or n == 1:
+        return 0
+    if n == 2:
+        return 1
+    
+    # a, b, c represent fibfib(i-3), fibfib(i-2), fibfib(i-1) respectively
+    a, b, c = 0, 0, 1
+    for _ in range(3, n</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/64</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count = 0
+    s_lower = s.lower()
+    for char in s_lower:
+        if char in 'aeiou':
+            count += 1
+    if s and s_lower[-1] == 'y':
+        count += 1
+    return count</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/65</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    s = str(x)
+    n = len(s)
+    
+    if shift > n:
+        return s[::-1]
+        
+    k = shift % n
+    return s[-k:] + s[:-k] if k else s</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/66</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sum(ord(c) for c in s if c.isupper())</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/67</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Extract all numeric values from the string (apples & oranges)
+    counts = [int(word) for word in s.split() if word.isdigit()]
+    
+    # Subtract known fruits from total to get mangoes
+    retu</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/68</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    min_val = float('inf')
+    min_idx = -1
+    
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            # Strictly less than ensures we keep the first occurrence (smallest index)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/69</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Count the frequency of each integer
+    freq = {}
+    for num in lst:
+        freq[num] = freq.get(num, 0) + 1
+        
+    result = -1
+    # Check each unique number against the condition
+    f</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/70</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    sorted_lst = sorted(lst)
+    result = []
+    left, right = 0, len(sorted_lst) - 1
+    
+    while left <= right:
+        # Pick minimum (left side)
+        result.append(sorted_lst[left])
+        l</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/71</td>
+      <td class="status">❌ fail</td>
+      <td class="result">name 'math' is not defined</td>
+      <td class="code"><pre>    # Check triangle inequality theorem
+    if a + b <= c or a + c <= b or b + c <= a:
+        return -1
+    
+    # Calculate semi-perimeter
+    s = (a + b + c) / 2
+    
+    # Heron's formula for area</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/72</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return q == q[::-1] and sum(q) <= w</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/73</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    changes = 0
+    n = len(arr)
+    for i in range(n // 2):
+        if arr[i] != arr[n - 1 - i]:
+            changes += 1
+    return changes</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/74</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count1 = sum(len(s) for s in lst1)
+    count2 = sum(len(s) for s in lst2)
+    
+    return lst1 if count1 <= count2 else lst2</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/75</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count = 0
+    d = 2
+    while d * d <= a:
+        while a % d == 0:
+            count += 1
+            a //= d
+        d += 1
+    if a > 1:
+        count += 1
+    return count == 3</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/76</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if x == 1:
+        return True
+    if n <= 1 or x == 0:
+        return False
+    while x % n == 0:
+        x //= n
+    return x == 1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/77</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return round(abs(a)**(1/3))**3 == abs(a)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/78</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    prime_hex_digits = {'2', '3', '5', '7', 'B', 'D'}
+    return sum(1 for char in num if char in prime_hex_digits)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/79</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return f"db{decimal:b}db"</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/80</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if len(s) < 3:
+        return False
+    
+    for i in range(len(s) - 2):
+        # Check if any two characters within the current window of 3 are identical
+        if s[i] == s[i+1] or s[i] == s[i</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/81</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    result = []
+    for gpa in grades:
+        if gpa == 4.0:
+            grade = 'A+'
+        elif gpa > 3.7:
+            grade = 'A'
+        elif gpa > 3.3:
+            grade = 'A-'
+        elif gpa</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/82</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    n = len(string)
+    
+    # Numbers less than 2 are not prime
+    if n <= 1:
+        return False
+    
+    # 2 is the only even prime number
+    if n == 2:
+        return True
+    
+    # Eliminate</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/83</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n == 1:
+        return 1
+    
+    # Numbers starting with 1: 1 * 10^(n-1)
+    # Numbers ending with 1:   9 * 10^(n-2)
+    # Numbers both start & end with 1: 1 * 10^(n-2)
+    # Using inclusion-e</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/84</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return format(sum(int(d) for d in str(N)), 'b')</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/85</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sum(x for i, x in enumerate(lst) if i % 2 != 0 and x % 2 == 0)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/86</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return ' '.join(''.join(sorted(word)) for word in s.split(' '))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/87</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    result = []
+    for r, row in enumerate(lst):
+        # Iterate columns backwards to automatically satisfy the descending column sort requirement
+        for c in range(len(row) - 1, -1, -1):</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/88</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not array:
+        return []
+    
+    # Check parity of the sum of the first and last elements
+    if (array[0] + array[-1]) % 2 == 1:
+        return sorted(array)          # Ascending order fo</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/89</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    shift = 4  # 2 * 2 = 4
+    encrypted_chars = []
+    
+    for char in s:
+        if 'a' <= char <= 'z':
+            # Shift lowercase letters, wrapping around at 'z'
+            new_char = chr((ord</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/90</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    unique_elements = sorted(set(lst))
+    return unique_elements[1] if len(unique_elements) > 1 else None</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/91</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count = 0
+    # Replace sentence terminators with newlines to easily split sentences
+    for sent in S.replace('.', '\n').replace('?', '\n').replace('!', '\n').split('\n'):
+        stripped = sent</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/92</td>
+      <td class="status">❌ fail</td>
+      <td class="result">This prints if this assert fails 10 (also good for debugging!)</td>
+      <td class="code"><pre>    # Check if all three inputs are integers (handles both int and float types)
+    is_integer = lambda n: isinstance(n, int) or (isinstance(n, float) and n.is_integer())
+    
+    if not (is_integer(x</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/93</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    vowels = set("aeiouAEIOU")
+    result = []
+    
+    for char in message:
+        if char.isalpha():
+            swapped_char = char.swapcase()
+            if swapped_char in vowels:</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/94</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    
+    def is_prime(n):
+        if n < 2:
+            return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/95</td>
+      <td class="status">❌ fail</td>
+      <td class="result">name 'd' is not defined</td>
+      <td class="code"><pre>    # Return False if the dictionary is empty
+    if not d:
+        return False
+    
+    keys = list(d.keys())
+    
+    # Ensure all keys are strings (non-strings would cause AttributeError on .islow</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/96</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    primes = []
+    for num in range(2, n):
+        # Check if num is prime by testing divisibility up to its square root
+        is_prime = True
+        for i in range(2, int(num**0.5) + 1):</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/97</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return (abs(a) % 10) * (abs(b) % 10)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/98</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    uppercase_vowels = {'A', 'E', 'I', 'O', 'U'}
+    return sum(1 for i in range(0, len(s), 2) if s[i] in uppercase_vowels)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/99</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    num = float(value)
+    
+    # Python's built-in round() uses "banker's rounding" (round half to even),
+    # so we implement custom logic for "round half away from zero".
+    if num >= 0:</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/100</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [n + 2 * i for i in range(n)]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/101</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return s.replace(',', ' ').split()</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/102</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if x > y:
+        return -1
+    
+    # Find the largest even integer less than or equal to y
+    candidate = y if y % 2 == 0 else y - 1
+    
+    # Check if this candidate falls within the valid ra</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/103</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if n > m:
+        return -1
+    # The average of an arithmetic sequence from n to m is simply (n + m) / 2
+    return bin(round((n + m) / 2))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/104</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sorted([num for num in x if all(int(d) % 2 != 0 for d in str(num))])</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/105</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    number_to_word = {
+        1: "One", 2: "Two", 3: "Three", 4: "Four", 
+        5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
+    }
+    
+    # Step 1: Filter out numbers not in the range [</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/106</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    res = []
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+        if i % 2 == 0:
+            res.append(fact)
+        else:
+            res.append(i * (i + 1) // 2)
+    return res</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/107</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    even_count = 0
+    odd_count = 0
+    
+    for i in range(1, n + 1):
+        s = str(i)
+        if s == s[::-1]:  # Check if palindrome
+            if i % 2 == 0:
+                even_count += 1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/108</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count = 0
+    for n in arr:
+        s = str(abs(n))
+        total = sum(int(d) for d in s)
+        
+        # For negative numbers, the first digit is treated as negative.
+        # This means we</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/109</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not arr:
+        return True
+    
+    drops = 0
+    n = len(arr)
+    
+    # Count how many times a larger element precedes a smaller one in circular manner
+    for i in range(n):
+        if arr</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/110</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    odd_count_lst1 = sum(1 for x in lst1 if x % 2 != 0)
+    even_count_lst2 = sum(1 for x in lst2 if x % 2 == 0)
+    
+    return "YES" if odd_count_lst1 <= even_count_lst2 else "NO"</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/111</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    counts = {}
+    for char in test.split():
+        counts[char] = counts.get(char, 0) + 1
+        
+    if not counts:
+        return {}
+        
+    max_count = max(counts.values())
+    return {cha</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/112</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    chars_to_remove = set(c)
+    result = ''.join(char for char in s if char not in chars_to_remove)
+    return (result, result == result[::-1])</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/113</td>
+      <td class="status">❌ fail</td>
+      <td class="result">Test 1</td>
+      <td class="code"><pre>    res = []
+    template = "the number of odd elements i n the stri ng i of the i nput."
+    
+    for s in lst:
+        # Count odd digits (1, 3, 5, 7, 9)
+        count = sum(1 for c in s if int(c) %</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/114</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not nums:
+        raise ValueError("Input array must be non-empty")
+        
+    current_min = global_min = nums[0]
+    
+    for num in nums[1:]:
+        # Either start a new subarray at the cu</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/115</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    total_lowerings = 0
+    for well in grid:
+        water_units = sum(well)
+        if water_units > 0:
+            total_lowerings += math.ceil(water_units / capacity)
+    return total_lowerings</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/116</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sorted(arr, key=lambda x: (bin(x).count('1'), x))</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/117</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    vowels = set('aeiouAEIOU')
+    return [word for word in s.split() if sum(1 for char in word if char not in vowels) == n]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/118</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    vowels = set("aeiouAEIOU")
+    # Scan from right to left, excluding the first and last characters
+    for i in range(len(word) - 2, 0, -1):
+        if word[i] in vowels and word[i-1] not in vowels</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/119</td>
+      <td class="status">❌ fail</td>
+      <td class="result">unexpected indent (<string>, line 17)</td>
+      <td class="code"><pre>        count = 0
+        for char in s:
+            if char == '(':
+                count += 1
+            else:
+                count -= 1
+            # If at any point we have more closing than ope</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/120</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if k == 0:
+        return []
+    return sorted(arr)[-k:]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/121</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sum(x for x in lst[::2] if x % 2 != 0)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/122</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sum(x for x in arr[:k] if abs(x) <= 99)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/123</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    odds = []
+    while True:
+        if n % 2 != 0:
+            odds.append(n)
+        if n == 1:
+            break
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/124</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Rule 1: Date string is not empty
+    if not date:
+        return False
+    
+    # Rule 4: Check format (must be split by exactly two hyphens)
+    parts = date.split('-')
+    if len(parts) != 3:</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/125</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if any(c.isspace() for c in txt):
+        return txt.split()
+    elif ',' in txt:
+        return txt.split(',')
+    else:
+        # Count lowercase letters with odd alphabetical index (a=0, b=1, .</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/126</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if len(lst) <= 1:
+        return True
+
+    prev = lst[0]
+    occurrence_count = 1
+
+    for num in lst[1:]:
+        # Check ascending order
+        if num < prev:
+            return False</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/127</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Find the boundaries of the intersection
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    
+    # Calculate the length of the intersection
+    length = end</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/128</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not arr:
+        return None
+    
+    sign_product = 1
+    magnitude_sum = 0
+    
+    for num in arr:
+        magnitude_sum += abs(num)
+        if num < 0:
+            sign_product *= -1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/129</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    n = len(grid)
+    
+    # 1. Locate the cell containing 1 (mandatory starting point for lexicographical minimization)
+    start_r, start_c = -1, -1
+    for r in range(n):
+        for c in range(n):</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/130</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Base cases derived from the example and problem statement
+    res = [1, 3] if n >= 1 else [1]
+    
+    for i in range(2, n + 1):
+        if i % 2 == 0:
+            # Even indices follow the dire</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/131</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    product = 1
+    has_odd = False
+    
+    for digit in str(n):
+        d = int(digit)
+        if d % 2 != 0:
+            product *= d
+            has_odd = True
+            
+    return product if h</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/132</td>
+      <td class="status">❌ fail</td>
+      <td class="result">—</td>
+      <td class="code"><pre>    depth = 0
+    for char in string:
+        if char == '[':
+            depth += 1
+            # If we encounter an opening bracket while already inside one, 
+            # it means there's a nested</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/133</td>
+      <td class="status">❌ fail</td>
+      <td class="result">name 'math' is not defined</td>
+      <td class="code"><pre>
+    return sum(math.ceil(x) ** 2 for x in lst)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/134</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not txt or not txt[-1].isalpha():
+        return False
+    
+    # If the string has only one character, it's automatically isolated.
+    # Otherwise, check if the character immediately before t</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/135</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Iterate backwards to find the largest index first
+    for i in range(len(arr) - 1, 0, -1):
+        if arr[i] < arr[i-1]:
+            return i
+    return -1</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/136</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    negatives = [x for x in lst if x < 0]
+    positives = [x for x in lst if x > 0]
+    
+    a = max(negatives) if negatives else None
+    b = min(positives) if positives else None
+    
+    return (a,</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/137</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    def to_float(val):
+        if isinstance(val, str):
+            val = val.replace(',', '.')
+        return float(val)
+
+    num_a = to_float(a)
+    num_b = to_float(b)
+
+    if num_a > num_b:</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/138</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return n >= 8 and n % 2 == 0</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/139</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    result = 1
+    current_fact = 1
+    for i in range(1, n + 1):
+        current_fact *= i      # Compute i! incrementally
+        result *= current_fact # Multiply into the running product
+    retur</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/140</td>
+      <td class="status">❌ fail</td>
+      <td class="result">name 're' is not defined</td>
+      <td class="code"><pre>
+    # Replace 3 or more consecutive spaces with '-' first
+    text = re.sub(r' {3,}', '-', text)
+    # Then replace any remaining single/double spaces with '_'
+    return re.sub(r' ', '_', text)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/141</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Condition 2: Exactly one dot '.'
+    if file_name.count('.') != 1:
+        return 'No'
+    
+    base, ext = file_name.split('.')
+    
+    # Condition 3: Base not empty and starts with a Latin al</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/142</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    total = 0
+    for i, val in enumerate(lst):
+        if i % 3 == 0:
+            total += val ** 2
+        elif i % 4 == 0:
+            total += val ** 3
+        else:
+            total += val
+    r</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/143</td>
+      <td class="status">❌ fail</td>
+      <td class="result">unexpected indent (<string>, line 22)</td>
+      <td class="code"><pre>        if n < 2:
+            return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+    
+    return " ".join(word for wor</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/144</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    x_num, x_den = map(int, x.split('/'))
+    n_num, n_den = map(int, n.split('/'))
+    
+    # The product of two fractions is (x_num * n_num) / (x_den * n_den)
+    # It's a whole number if the denomi</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/145</td>
+      <td class="status">❌ fail</td>
+      <td class="result">—</td>
+      <td class="code"><pre>    # Pair each number with its original index to explicitly handle tie-breaking
+    indexed_nums = list(enumerate(nums))
+    
+    # Sort by digit sum (ascending), then by original index (ascending)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/146</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    count = 0
+    for num in nums:
+        if num > 10:
+            s = str(num)
+            first_digit = int(s[0])
+            last_digit = int(s[-1])
+            # Check if both digits are odd (1,</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/147</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # a[i] % 3 == 0 if and only if i % 3 == 2
+    # Count of indices where a[i] ≡ 0 (mod 3)
+    count_zero = (n + 1) // 3
+    
+    # The remaining elements are always ≡ 1 (mod 3)
+    count_one = n - c</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/148</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+    
+    # Return empty tuple if either planet is invalid
+    if planet1 not in planets or planet2 not in</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/149</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Filter out strings with odd lengths
+    even_length_strings = [s for s in lst if len(s) % 2 == 0]
+    
+    # Sort the filtered list: primarily by length, secondarily alphabetically
+    return so</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/150</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    
+    # Numbers less than 2 are not prime (0, 1, negatives)
+    if n < 2:
+        return y
+        
+    # Check for factors from 2 up to sqrt(n)
+    for i in range(2, int(n**0.5) + 1):
+        if n</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/151</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return sum(x**2 for x in lst if type(x) == int and x > 0 and x % 2 != 0)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/152</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    return [abs(g - gu) for g, gu in zip(game, guess)]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/153</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    best_ext = None
+    max_strength = -float('inf')
+    
+    for ext in extensions:
+        # Calculate strength: uppercase count minus lowercase count
+        strength = sum(1 for c in ext if c.isup</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/154</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # If b is longer than a, no rotation of b can possibly be a substring of a
+    if len(b) > len(a):
+        return False
+    
+    n = len(b)
+    for i in range(n):
+        # Generate the i-th cycli</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/155</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Convert to string after taking absolute value to ignore negative signs
+    digits = str(abs(num))
+    
+    # Count even digits (0, 2, 4, 6, 8)
+    even_count = sum(int(d) % 2 == 0 for d in digit</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/156</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    val_map = [
+        (1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'),
+        (100, 'C'), (90, 'XC'), (50, 'L'), (40, 'XL'),
+        (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')
+    ]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/157</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    # Ensure all sides are positive (degenerate/invalid triangles)
+    if a <= 0 or b <= 0 or c <= 0:
+        return False
+    
+    # Sort the sides so that the longest side is always last (potential</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/158</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if not words:
+        return ""
+    
+    best_word = words[0]
+    max_unique_count = len(set(best_word))
+    
+    for word in words[1:]:
+        unique_count = len(set(word))
+        
+        # Pr</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/159</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    eaten = min(need, remaining)
+    return [number + eaten, remaining - eaten]</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/160</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    expr = str(operand[0])
+    for op, val in zip(operator, operand[1:]):
+        expr += f" {op} {val}"
+    
+    return eval(expr)</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/161</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    if any(c.isalpha() for c in s):
+        return s.swapcase()
+    else:
+        return s[::-1]</pre></td>
+    </tr>
+    <tr class="fail">
+      <td class="tid">HumanEval/162</td>
+      <td class="status">❌ fail</td>
+      <td class="result">name 'hashlib' is not defined</td>
+      <td class="code"><pre>    if text == "":
+        return None
+    return hashlib.md5(text.encode('utf-8')).hexdigest()</pre></td>
+    </tr>
+    <tr class="pass">
+      <td class="tid">HumanEval/163</td>
+      <td class="status">✅ pass</td>
+      <td class="result">passed</td>
+      <td class="code"><pre>    start = min(a, b)
+    end = max(a, b)
+    return [d for d in range(2, 10, 2) if start <= d <= end]</pre></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
